@@ -1,0 +1,9 @@
+/node_modules
+/storage/*.key
+/vendor
+npm-debug.log
+yarn-error.log
+.db.env
+.env
+/.ci/php-cs-fixer/vendor
+coverage.xml
