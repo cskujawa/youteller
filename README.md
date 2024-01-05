@@ -46,11 +46,12 @@ I am only sharing this in the hopes that it can serve as a reference for others 
 
 ### Built With
 
-Firefly III serves as the frontend for this stack
+Firefly III serves as the frontend for this stack. I've modified it in just a few places to allow myself to sync using a button from within the Firefly III transactions page.
+* Added an additional route to the existing web router https://github.com/cskujawa/youteller/blob/main/firefly/html/routes/web.php#L1237
+* Added an additional controller to handle API requests to the youteller-api service https://github.com/cskujawa/youteller/blob/main/firefly/html/app/Http/Controllers/Transaction/SyncController.php
+* Added a button to handle sending the request from the UI https://github.com/cskujawa/youteller/blob/main/firefly/html/resources/views/transactions/index.twig#L82
 
-A simple python API server acts as the backend for processing anything I don't want to offload on Firefly
-
-The python backend also implements a connection with Plaid for syncing financial information.
+The youteller-api python backend implements the Plaid python package for syncing financial information. It also handles translating the data to a format Firefly III can handle, synchronizing initial balances, and API calls to Firefly III to import all available transactions.
 
 * [![Laravel][Laravel.com]][Laravel-url]
 * [![MariaDB][Mariadb.org]][Mariadb-url]
