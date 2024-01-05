@@ -18,6 +18,7 @@ Youteller - Plaid - Firefly III
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
+        <li><a href="#about-me">About Me</a></li>
       </ul>
     </li>
     <li>
@@ -56,6 +57,12 @@ The youteller-api python backend implements the Plaid python package for syncing
 * [![Laravel][Laravel.com]][Laravel-url]
 * [![MariaDB][Mariadb.org]][Mariadb-url]
 * [![Python][Python.org]][Python-url]
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+### About Me
+
+Hi, I'm Cole. I'm not a full time developer and I like it that way. If you have questions about how I implemented this or are seeking advice about a similar project or implementation of this feel free to reach out, though I may not respond quickly.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
