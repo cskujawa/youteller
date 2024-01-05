@@ -1,0 +1,11 @@
+/node_modules
+/storage/*.key
+/vendor
+npm-debug.log
+yarn-error.log
+.env
+.db.env
+/.ci/php-cs-fixer/vendor
+coverage.xml
+__pycache__
+/cursors/*

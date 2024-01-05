@@ -1,0 +1,30 @@
+<?php
+
+namespace FireflyIII\Console\Commands\Correction;
+
+use Illuminate\Console\Command;
+
+/**
+ * Class CorrectionSkeleton
+ * TODO DONT FORGET TO ADD THIS TO THE DOCKER BUILD
+ */
+class CorrectionSkeleton extends Command
+{
+    protected $description = 'DESCRIPTION HERE';
+
+    protected $signature = 'firefly-iii:CORR_COMMAND';
+
+    /**
+     * Execute the console command.
+     *
+     * @return int
+     */
+    public function handle(): int
+    {
+        //
+        $this->warn('Congrats, you found the skeleton command. Boo!');
+
+
+        return 0;
+    }
+}

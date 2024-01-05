@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.2/phpunit.xsd"
+         backupGlobals="false"
+         backupStaticProperties="false"
+         beStrictAboutOutputDuringTests="true"
+         bootstrap="vendor/autoload.php"
+         cacheDirectory=".phpunit.cache"
+         colors="true"
+         executionOrder="depends,defects"
+         failOnRisky="true"
+         failOnWarning="true"
+         processIsolation="false"
+         stopOnFailure="true">
+    <php>
+        <env name="APP_ENV" value="testing"/>
+        <env name="APP_LOG_ENV" value="notice"/>
+        <ini name="xdebug.mode" value="coverage"/>
+    </php>
+    <testsuites>
+        <testsuite name="all">
+            <directory suffix="Test.php">./tests</directory>
+        </testsuite>
+        <testsuite name="unit">
+            <directory suffix="Test.php">./tests/unit</directory>
+        </testsuite>
+        <testsuite name="integration">
+            <directory suffix="Test.php">./tests/integration</directory>
+        </testsuite>
+    </testsuites>
+    <source>
+        <include>
+            <directory suffix=".php">app</directory>
+        </include>
+    </source>
+    <coverage ignoreDeprecatedCodeUnits="true"
+              pathCoverage="true">
+        <report>
+            <clover outputFile="coverage.xml"/>
+        </report>
+    </coverage>
+</phpunit>

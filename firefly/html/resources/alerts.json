@@ -1,0 +1,140 @@
+[
+	{
+		"version": "1.0.0",
+		"advisory": true,
+		"level": "info",
+		"message": "Info level, basic alert."
+	},
+	{
+		"version": "2.0.0",
+		"advisory": true,
+		"level": "warning",
+		"message": "Warning level, bit more serious."
+	},
+	{
+		"version": "3.0.0",
+		"advisory": true,
+		"level": "danger",
+		"message": "Danger level, user must act."
+	},
+	{
+		"version": "5.5.0",
+		"advisory": true,
+		"level": "info",
+		"message": "This version of Firefly III contains a security vulnerability, and you should update as soon as possible."
+	},
+	{
+		"version": "5.5.1",
+		"advisory": true,
+		"level": "info",
+		"message": "This version of Firefly III contains a security vulnerability, and you should update as soon as possible."
+	},
+	{
+		"version": "5.5.2",
+		"advisory": true,
+		"level": "info",
+		"message": "This version of Firefly III contains a security vulnerability, and you should update as soon as possible."
+	},
+	{
+		"version": "5.5.3",
+		"advisory": true,
+		"level": "info",
+		"message": "This version of Firefly III contains a security vulnerability, and you should update as soon as possible."
+	},
+	{
+		"version": "5.5.4",
+		"advisory": true,
+		"level": "info",
+		"message": "This version of Firefly III contains a security vulnerability, and you should update as soon as possible."
+	},
+	{
+		"version": "5.5.5",
+		"advisory": true,
+		"level": "info",
+		"message": "This version of Firefly III contains a security vulnerability, and you should update as soon as possible."
+	},
+	{
+		"version": "5.5.6",
+		"advisory": true,
+		"level": "info",
+		"message": "This version of Firefly III contains a security vulnerability, and you should update as soon as possible."
+	},
+	{
+		"version": "5.5.7",
+		"advisory": true,
+		"level": "info",
+		"message": "This version of Firefly III contains a security vulnerability, and you should update as soon as possible."
+	},
+	{
+		"version": "5.5.8",
+		"advisory": true,
+		"level": "info",
+		"message": "This version of Firefly III contains a security vulnerability, and you should update as soon as possible."
+	},
+	{
+		"version": "5.5.9",
+		"advisory": true,
+		"level": "info",
+		"message": "This version of Firefly III contains a security vulnerability, and you should update as soon as possible."
+	},
+	{
+		"version": "5.5.10",
+		"advisory": true,
+		"level": "info",
+		"message": "This version of Firefly III contains a security vulnerability, and you should update as soon as possible."
+	},
+	{
+		"version": "5.5.11",
+		"advisory": true,
+		"level": "warning",
+		"message": "This version of Firefly III contains a security vulnerability (Google CVE-2021-3663), and you should update as soon as possible."
+	},
+	{
+		"version": "5.5.11",
+		"advisory": true,
+		"level": "warning",
+		"message": "This version of Firefly III contains a security vulnerability (Google CVE-2021-3663), and you should update as soon as possible."
+	},
+	{
+		"version": "5.6.0-alpha.1",
+		"advisory": false,
+		"level": "info",
+		"message": "Test info level system alert."
+	},
+	{
+		"version": "5.7.0",
+		"advisory": false,
+		"level": "info",
+		"message": "Test informational message."
+	},
+	{
+		"version": "5.8.0-alpha.1",
+		"advisory": true,
+		"level": "warning",
+		"message": "This ALPHA version of Firefly III has been superseded by a new release. Please upgrade."
+	},
+	{
+		"version": "6.0.0-alpha.1",
+		"advisory": true,
+		"level": "warning",
+		"message": "This ALPHA version of Firefly III has been superseded by a new release. Please upgrade."
+	},
+	{
+		"version": "6.0.0-alpha.2",
+		"advisory": true,
+		"level": "warning",
+		"message": "This ALPHA version of Firefly III has been superseded by a new release. Please upgrade."
+	},
+	{
+		"version": "6.0.0-beta.1",
+		"advisory": true,
+		"level": "warning",
+		"message": "This BETA version of Firefly III has been superseded by a new release. Please upgrade."
+	},
+	{
+		"version": "6.0.0-beta.2",
+		"advisory": true,
+		"level": "warning",
+		"message": "This BETA version of Firefly III has been superseded by a new release. Please upgrade."
+	}
+]
