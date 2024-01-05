@@ -44,7 +44,6 @@ I am only sharing this in the hopes that it can serve as a reference for others 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
 ### Built With
 
 Firefly III serves as the frontend for this stack
@@ -63,6 +62,19 @@ The python backend also implements a connection with Plaid for syncing financial
 ## Getting Started
 
 This is a standalone environment that runs on Docker Compose. None of the containerized apps require any dependencies to be pre-installed or exist on the host OS. That all being said, if you have Docker Compose you should be able to clone or fork this repo, change to the project directory update the .env files and boot it.
+
+This stack was built with the intention of it not being accessible from the web, so accordingly the ports are mapped to local only ports on my bare metal server.
+
+The Plaid integration is not a full fledged integration, there is no method for connecting to Plaid to auth or acquire any IDs or Access Codes.
+To get the access codes required for the integration to work you will need to either have a full fledged Plaid integration or use something like the Plaid quick start to get the access codes for the accounts you want to access.
+For more information about which configuration options you will need to provide and requirements review the .env.example file for the youteller-api
+https://github.com/cskujawa/youteller/blob/main/youteller-api/.env.example
+
+This stack is not intended to work with every possible bank supported by Plaid, it has only been tested for my personal banks.
+
+Prior to booting up the youteller-api container you should ensure your Firefly III instance is up and running, and you will need to create the accounts you want connected to Plaid as well as an API token for Firefly III. 
+For more information about which configuration options you will need to provide and requirements review the .env.example file for the youteller-api
+https://github.com/cskujawa/youteller/blob/main/youteller-api/.env.example
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
