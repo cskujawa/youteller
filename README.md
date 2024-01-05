@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-# YouTeller
+Youteller - Plaid - Firefly III
 
   <p align="center">
     <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
