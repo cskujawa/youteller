@@ -32,6 +32,7 @@ Youteller - Plaid - Firefly III
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+<img src=https://github.com/cskujawa/youteller/blob/main/docs/images/Youteller_Transactions.png alt="App Example">
 
 ### :warning: :warning: :warning: Disclaimer :warning: :warning: :warning:
 This documentation and the project as a whole are a work in progress.
@@ -47,7 +48,7 @@ I am only sharing this in the hopes that it can serve as a reference for others 
 
 ### Built With
 
-Firefly III serves as the frontend for this stack. I've modified it in just a few places to allow myself to sync using a button from within the Firefly III transactions page.
+Firefly III serves as the frontend for this stack. I've modified it in just a few places to allow myself to sync using a button from within the Firefly III transactions page (as seen in the screenshot).
 * Added an additional route to the existing web router https://github.com/cskujawa/youteller/blob/main/firefly/html/routes/web.php#L1237
 * Added an additional controller to handle API requests to the youteller-api service https://github.com/cskujawa/youteller/blob/main/firefly/html/app/Http/Controllers/Transaction/SyncController.php
 * Added a button to handle sending the request from the UI https://github.com/cskujawa/youteller/blob/main/firefly/html/resources/views/transactions/index.twig#L82
@@ -68,6 +69,30 @@ Hi, I'm Cole. I'm not a full time developer and I like it that way. If you have 
 
 <!-- GETTING STARTED -->
 ## Getting Started
+
+### Pre-Requisites
+1. Docker-compose
+2. Docker
+3. Plaid Developer Account, Client ID, and Secret https://dashboard.plaid.com/account/keys
+4. Plaid IDs and Access Tokens for each account you plan on syncing
+
+### Starting the project
+1. Clone project
+2. Open the Portfolio.py file, this is where you will link your .env variables to an account object in the Portfolio
+3. Copy the /youteller-api/.env.example file to /youteller-api/.env and fill in the relevant details
+4. Copy the /.env.example to /.env and fill in the relevant details
+5. Copy the /.db.env.example to /.db.env and fill in the relevant details
+6. Check the ports in the /docker-compose.yaml and the /youteller-api/Dockerfile and ensure they are available and the ones you want to use
+7. Ensure you are in the root /youteller/ directory, if not, get there
+8. Run `docker compose up -d app db`
+9. That will start the Firefly web app, if you didn't change the port for Firefly it will be at http://serverip:83
+10. Setup your Firefly accounts (this app currently expects them to all be asset accounts, even credit cards)
+11. Update the list of accounts in Portfolio.py
+12. Update the information in /youteller-api/.env
+13. Run `docker compose up -d youteller-api`
+
+If you need to stop the project it's `docker compose stop`
+If you want to reset the Plaid cursor positions just delete the files in /youteller-api/cursors
 
 This is a standalone environment that runs on Docker Compose. None of the containerized apps require any dependencies to be pre-installed or exist on the host OS. That all being said, if you have Docker Compose you should be able to clone or fork this repo, change to the project directory update the .env files (.env, .db.env, /youteller-api/.env), update the Portfolio.py variables, and boot it.
 
