@@ -69,7 +69,7 @@ Hi, I'm Cole. I'm not a full time developer and I like it that way. If you have 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is a standalone environment that runs on Docker Compose. None of the containerized apps require any dependencies to be pre-installed or exist on the host OS. That all being said, if you have Docker Compose you should be able to clone or fork this repo, change to the project directory update the .env files and boot it.
+This is a standalone environment that runs on Docker Compose. None of the containerized apps require any dependencies to be pre-installed or exist on the host OS. That all being said, if you have Docker Compose you should be able to clone or fork this repo, change to the project directory update the .env files (.env, .db.env, /youteller-api/.env), update the Portfolio.py variables, and boot it.
 
 This stack was built with the intention of it not being accessible from the web, so accordingly the ports are mapped to local only ports on my bare metal server.
 
